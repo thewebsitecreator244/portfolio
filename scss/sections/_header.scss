@@ -1,11 +1,20 @@
 @use '../base/vars' as *;
 .header {
     padding: 20.5px 0;
+    @media (max-width: 768px) {
+        padding: 16px 0;
+    }
 }
 
 .header__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 .logotype {
     width: 146px;
