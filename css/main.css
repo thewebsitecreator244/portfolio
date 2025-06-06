@@ -376,4 +376,60 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+body {
+  background-color: #1b1a17;
+  color: #f0e3ca;
+  font-family: "Inconsolata", monospace;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+*, * > * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20.5px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logotype {
+  width: 146px;
+}
+
+.logotype__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  gap: 64px;
+}
+
+.link-anchor {
+  text-decoration: none;
+  color: #f0e3ca;
+  font-weight: bold;
+  font-size: 20px;
+}
+.link-anchor:hover {
+  color: #00ff8c;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
 }/*# sourceMappingURL=main.css.map */
