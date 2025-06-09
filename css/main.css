@@ -474,12 +474,36 @@ ul, ol, li {
 .burger {
   width: 50px;
   height: 50px;
-  background-color: #00ff8c;
   display: none;
   z-index: 1;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.burger__line {
+  width: 40px;
+  height: 4px;
+  background-color: #f0e3ca;
+  display: block;
+  position: relative;
+}
+.burger__line::before, .burger__line::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  position: absolute;
+}
+.burger__line::before {
+  top: -10px;
+}
+.burger__line::after {
+  bottom: -10px;
 }
 @media (max-width: 525px) {
   .burger {
-    display: block;
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */
